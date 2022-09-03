@@ -1,6 +1,3 @@
-from tkinter.messagebox import 
-
-
 print("WELCOME TO MY QUIZ")
 play = input("Do You Want to Play? ")
 if play.lower() != "yes":
