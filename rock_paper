@@ -1,0 +1,35 @@
+import random
+
+user_wins = 0
+computer_wins = 0
+
+options = ["rock","paper","scissors"]
+
+comp_choice = random.randrange(0,3)
+
+
+
+while True:
+    user_input = input("type your pick or 'q' to quit \n ").lower()
+    if user_input == "q":
+        break
+
+    comp_input = options[comp_choice]
+
+
+if user_input == "rock" and comp_input == "scisssors":
+    print("YOU WIN!")
+    user_wins += 1
+    
+elif user_input == "paper" and comp_input == "rock":
+    print("YOU WIN!")
+    user_wins += 1
+    
+elif user_input == "scissors" and comp_input == "paper":
+    print("YOU WIN!")
+    user_wins += 1
+    
+else:
+    print("YOU LOSE!")
+    computer_wins +=1        
+            
